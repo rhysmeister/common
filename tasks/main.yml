@@ -16,3 +16,9 @@
   yum:
     name: "{{ additional_packages }}"
     state: present
+
+- name: Ensure firewalld service is configured
+  service:
+    name: firewalld
+    state: "{{ firewalld_state }}"
+    enabled: "{{ firewalld_enabled }}"

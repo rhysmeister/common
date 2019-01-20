@@ -5,3 +5,5 @@ additional_packages:
   - net-tools
   - wget
   - xz
+firewalld_state: "started"
+firewalld_enabled: "yes"
